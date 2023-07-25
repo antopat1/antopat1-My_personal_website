@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Project</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+  <link href="../../assets/css/custoumRules.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="icon" type="image/x-icon" href="images/myimg.jpg">
+
+
+
+
+</head>
+
+
+
+<body>
+  <div class="page">
+    <header><a name="home"></a>
+
+      <nav class="navbar navbar-expand-sm fixed-top fixed-navbar ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav justify-content-start d-md-block order-md-first" style="transform: translateY(-1px);">
+          <ul class="nav">
+            <li class="brand_icon" style="margin-left: 8px;"></li>
+            <li class="nav-item">
+              <div class="form-check form-switch nav-link" style="margin-bottom: 0;margin-left: 2rem;">
+                <input class="form-check-input" type="checkbox" id="theme-toggle">
+                <label class="form-check-label" for="theme-toggle"><span id="mode"></span></label>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarMenu">
+          <ul class="nav nav-pills justify-content-end bg-info">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../">Home page</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link active dropdown-toggle bg-warning" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Naviga sezioni</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../professional_experiences/">Esperienze Professionali</a></li>
+                <li><a class="dropdown-item" href="../training_course/">Titoli ed esperienze di studio</a></li>
+                <li><a class="dropdown-item" href="../portfolio_projects/">Portfolio progetti</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="../../contact_page/">Richiedi consulenza</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../antonino_paterno_profile_overview/">Overview profilo</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+
+    </header>
+
+
+    <main class="main__container" style="background-color: #94a0fd74;">
+      <div class="container-fluid">
+
+
+        <section>
+          <br>
+          <div class="biography__title">
+            <h1>Percorso di Formazione scolastica/Stage</h1>
+          </div>
+        </section>
+
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.isfrancescoredi.edu.it/" target="_blank">
+                  <img src="../../assets/img/itis_belpasso.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                    Go somewhere
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.dieei.unict.it/" target="_blank">
+                  <img src="../../assets/img/unict.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                    Go somewhere
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.leonardo.com/it/" target="_blank">
+                  <img src="../../assets/img/selex_elsag.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                    Go somewhere
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="modal1Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal1Label">Modal 1</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Contenuto del Modale 1
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus magni voluptate aliquid iste nemo id
+                blanditiis doloremque omnis facere, voluptatum velit enim ipsam beatae suscipit ipsum quisquam sequi
+                voluptatibus culpa!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, maiores. Blanditiis ab eos quaerat,
+                libero quae autem harum iusto laboriosam cum placeat sint quibusdam dicta minima soluta facere ducimus
+                dolores?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quisquam repudiandae ex, voluptas harum
+                voluptate, molestiae in dicta nesciunt quidem atque inventore. Autem pariatur odio officiis molestiae
+                amet porro dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure optio aut ullam doloribus dolore
+                recusandae alias quos sed odit? Inventore reiciendis culpa nulla vitae sint, adipisci labore? Quisquam,
+                numquam in.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo esse fugiat fuga aspernatur ad odit rem
+                repudiandae commodi dolore eveniet. Culpa sunt deleniti dolores magni iste neque, dolorem cupiditate
+                molestiae.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="modal2Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal2Label">Modal 2</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Contenuto del Modale 2
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus magni voluptate aliquid iste nemo id
+                blanditiis doloremque omnis facere, voluptatum velit enim ipsam beatae suscipit ipsum quisquam sequi
+                voluptatibus culpa!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, maiores. Blanditiis ab eos quaerat,
+                libero quae autem harum iusto laboriosam cum placeat sint quibusdam dicta minima soluta facere ducimus
+                dolores?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quisquam repudiandae ex, voluptas harum
+                voluptate, molestiae in dicta nesciunt quidem atque inventore. Autem pariatur odio officiis molestiae
+                amet porro dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure optio aut ullam doloribus dolore
+                recusandae alias quos sed odit? Inventore reiciendis culpa nulla vitae sint, adipisci labore? Quisquam,
+                numquam in.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo esse fugiat fuga aspernatur ad odit rem
+                repudiandae commodi dolore eveniet. Culpa sunt deleniti dolores magni iste neque, dolorem cupiditate
+                molestiae.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="modal3Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal3Label">Modal 3</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Contenuto del Modale 3
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus magni voluptate aliquid iste nemo id
+                blanditiis doloremque omnis facere, voluptatum velit enim ipsam beatae suscipit ipsum quisquam sequi
+                voluptatibus culpa!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, maiores. Blanditiis ab eos quaerat,
+                libero quae autem harum iusto laboriosam cum placeat sint quibusdam dicta minima soluta facere ducimus
+                dolores?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quisquam repudiandae ex, voluptas harum
+                voluptate, molestiae in dicta nesciunt quidem atque inventore. Autem pariatur odio officiis molestiae
+                amet porro dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure optio aut ullam doloribus dolore
+                recusandae alias quos sed odit? Inventore reiciendis culpa nulla vitae sint, adipisci labore? Quisquam,
+                numquam in.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo esse fugiat fuga aspernatur ad odit rem
+                repudiandae commodi dolore eveniet. Culpa sunt deleniti dolores magni iste neque, dolorem cupiditate
+                molestiae.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <br>
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col align-bottom">
+            <div class="footer__element">
+              <div class="footer__text">&copy; 2023 - Antonio Paternò</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contact-form-container flex-row">
+              <form id="contactForm" action="#" method="POST">
+                <label
+                  style="font-weight: bold; text-decoration: underline; padding-left: 40px; padding-bottom: 10px;">Contact
+                  me</label><br>
+                <label for="email">Email:</label><br>
+                <input name="_replyto" type="email" id="email" placeholder="mariorossi@example.com" required /><br>
+                <label for="msg">Message:</label><br>
+                <textarea name="message" type="text" id="msg" placeholder="Hello..." required></textarea><br>
+                <button class="bt-pacifico" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  disabled>Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="col align-bottom" style="padding-left: 100px;">
+            <div class="footer__element">
+              <div class="footer__link">
+                <a href="mailto:antopat1@gmail.com">Email</a>
+                <span>||</span>
+                <a href="#home">Torna su</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalTitle"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="userMessage"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="inoltraMessaggio()">Inoltra il messaggio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal successo -->
+      <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="successModalLabel">Messaggio inoltrato con successo</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <script src="../../assets/js/bootstrap.js"></script>
+    <script src="../../assets/js/custoumJS.js"></script>
+
+  </div>
+</body>
+
+</html>
