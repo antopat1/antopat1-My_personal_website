@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio Project</title>
+  <title>Contact_page</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <link rel="icon" type="image/x-icon" href="images/myimg.jpg">
+  <link rel="icon" type="image/x-icon" href="../assets/img/myimg.jpg">
 
 
 
@@ -84,8 +84,10 @@
         <section>
           <br>
           <div class="biography__title">
-            <h1>Portfolio progetti programmazione blockchain</h1>
+            <h1>P@rlami di te e richiedi consulenza su tema specifico</h1>
           </div>
+          <br>
+          <br>
         </section>
 
 
@@ -99,84 +101,169 @@
             novalidate>
             <div class="col-md-4">
               <div class="form-floating">
-                <input name="name" type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                <label for="validationCustom01">First name</label>
+                <input name="name" type="text" class="form-control" id="validationCustom01"  required>
+                <label for="validationCustom01">Nome</label>
                 <div class="valid-feedback">
-                  Looks good!
+                  ok,valido!
                 </div>
                 <div class="invalid-feedback">
-                  Please select a valid state.
+                  Per favore popola correttamente il campo!
                 </div>
               </div>
             </div>
+            
+            
+
             <div class="col-md-4">
               <div class="form-floating">
-                <input name="surname" type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                <label for="validationCustom02">Last name</label>
+                <input name="surname" type="text" class="form-control" id="validationCustom02" required>
+                <label for="validationCustom02">Cognome</label>
                 <div class="valid-feedback">
-                  Looks good!
+                  ok,valido!
                 </div>
                 <div class="invalid-feedback">
-                  Please select a valid state.
+                  Per favore popola correttamente il campo!
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label">Username</label>
+              <label for="validationCustomUsername" class="form-label">email</label>
               <div class="input-group has-validation">
                 <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input name="email" type="text" class="form-control" id="validationCustomUsername"
+                <input name="email" type="email" class="form-control" id="validationCustomUsername"
                   aria-describedby="inputGroupPrepend" placeholder="mariorossi@example.com" required>
                 <div class="invalid-feedback">
-                  Please choose a username.
+                  Per favore indica il tuo indirizzo mail nel formato corretto!
                 </div>
                 <div class="valid-feedback">
-                  Looks good!
+                  ok,valido!
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">City</label>
-              <input name="city" type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Please provide a valid city.
-              </div>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
 
             <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">State</label>
+              <label for="validationCustom04" class="form-label">NAZIONALITA'</label>
               <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
+                <option selected disabled value="">SELEZIONA/option>
+                <option selected>ITALIANA</option>
+                <option>EUROPEA</option>
+                <option>NORD AMERICA</option>
+                <option>SUD AMERICA</option>
+                <option>ASIATICA</option>
+                <option>OCEANIA</option>
+
               </select>
               <div class="invalid-feedback">
-                Please select a valid state.
+                Per favore popola correttamente il campo!
               </div>
             </div>
 
-            <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Zip</label>
-              <input name="cap" type="text" class="form-control" id="validationCustom05" required>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Regione</label>
+              <input name="city" type="text" class="form-control" id="validationCustom03" value="LOMBARDIA" required>
               <div class="invalid-feedback">
-                Please provide a valid zip.
+                Per favore indica la regione in cui vivi
+              </div>
+              <div class="valid-feedback">
+                ok,valido!
               </div>
             </div>
+
+            
+
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">CAP</label>
+              <input name="cap" type="text" class="form-control" id="validationCustom05" pattern="[0-9]{5}" required>
+              <div class="invalid-feedback">
+                Fornisci un CAP corretto di 5 cifre
+              </div>
+              <div class="valid-feedback">
+                ok,valido!
+              </div>  
+            </div>
+
+            
+            <div class="col-md-6">
+              <label for="languageSelect" class="form-label">Tema della richiesta</label>
+              <select class="form-select" id="languageSelect" required>
+                <option selected disabled value="">Seleziona...</option>
+                <option>HTML</option>
+                <option>CSS/Bootstrap</option>
+                <option>Python</option>
+                <option>Django</option>
+                <option>MongoDB</option>
+                <option>Solidity/Blockchain e Smart Contract</option>
+                <option>Consulenza attività PM, cantieri TLC</option>
+              </select>
+            </div>
+            
+            <div class="col-md-6">
+              <label for="knowledgeRange" class="form-label" style="color:green">Livello attuale di conoscenza in materia</label>
+              <div class="range-labels">
+                <span class="min-label">1</span>
+                <span class="max-label">10</span>
+              </div>
+              <input type="range" class="form-range" id="knowledgeRange" min="1" max="10" value="1" step="1">
+              <p id="rangeValue">Livello: 1</p>
+            </div>
+
+           
+            <div class="col-md-6">
+              <label for="requestObject" class="form-label">Oggetto della richiesta</label>
+              <textarea name="requestObject" class="form-control" id="requestObject" rows="5" required></textarea>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center align-items-center">
+                <label class="form-label text-center">Modalità di contatto</label><br><br><br>
+              </div>
+              <div class="text-center"> <!-- Aggiunta classe text-center -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="contactMethod" id="radioEmail" value="Email">
+                  <label class="form-check-label" for="radioEmail">
+                    Email
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="contactMethod" id="radioVideocall" value="Videocall">
+                  <label class="form-check-label" for="radioVideocall">
+                    Videocall
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="contactMethod" id="radioPhoneCall" value="Chiamata telefonica" disabled>
+                  <label class="form-check-label" for="radioPhoneCall">
+                    Chiamata telefonica
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="contactMethod" id="radioInPerson" value="Incontro in presenza" disabled>
+                  <label class="form-check-label" for="radioInPerson">
+                    Incontro in presenza
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            
+
+
+
             <div class="col-12">
               <div class="form-check">
                 <input name="agree" class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                 <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
+                  Accetta termini e condizioni
                 </label>
                 <div class="invalid-feedback">
-                  You must agree before submitting.
+                  Devi accettare i termini prima dell'inoltro,
                 </div>
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary" type="button" id="submitBtn">Submit form</button>
+              <button class="btn btn-primary" type="button" id="submitBtn">Inoltra richiesta</button>
             </div>
           </form>
         </div>

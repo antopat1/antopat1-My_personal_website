@@ -168,3 +168,15 @@ document.getElementById('formModal').addEventListener('hidden.bs.modal', functio
 
 // Chiama la funzione per la gestione in tempo reale dei messaggi di feedback
 handleFieldValidation();
+
+
+
+const knowledgeRange = document.getElementById('knowledgeRange');
+const rangeValue = document.getElementById('rangeValue');
+
+knowledgeRange.addEventListener('input', updateRangeValue);
+knowledgeRange.addEventListener('change', updateRangeValue);
+
+function updateRangeValue() {
+  rangeValue.textContent = 'Livello selezionato: ' + knowledgeRange.value;
+}
