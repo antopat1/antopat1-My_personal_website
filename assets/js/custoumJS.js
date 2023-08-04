@@ -54,7 +54,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
   modal.show();
 });
 
-function inoltraMessaggio() {
+function inoltraMessaggioFooter() {
   var form = document.getElementById('contactForm');
   form.action = 'https://formspree.io/f/xwkdkoov';
   form.submit();
