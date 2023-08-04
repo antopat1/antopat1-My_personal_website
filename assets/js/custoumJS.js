@@ -66,14 +66,6 @@ function inoltraMessaggioFooter() {
   modal.hide();
 }
 
-var modalElement = document.getElementById('exampleModal');
-modalElement.addEventListener('hidden.bs.modal', function () {
-  document.body.classList.remove('modal-open');
-  var modalBackdrop = document.querySelector('.modal-backdrop');
-  if (modalBackdrop) {
-    modalBackdrop.remove();
-  }
-});
 
 var modalElement = document.getElementById('exampleModal');
 modalElement.addEventListener('hidden.bs.modal', function () {
