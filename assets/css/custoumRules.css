@@ -3,7 +3,7 @@
 }
 
 .dark-theme {
-  background-color: #058a28;
+  background-color: #469489;
   color: #ffffff;
 }
 
@@ -40,9 +40,11 @@
 
 .nav-item a,
 .nav-item.dropdown .nav-link {
-  color: rgb(255, 0, 204);
+  color: rgb(21, 0, 255);
   font-weight: bold;
 }
+
+
 
 /*
 .row .col-md-1,
@@ -76,7 +78,7 @@
   text-align: center;
 }
 
-.name h6 {
+.name h1 {
   font-size: calc(0.5px + 2vw) !important;
   font-family: Poppins;
   font-weight: bold;
@@ -89,8 +91,8 @@
   position: relative;
 }
 
-.name h6::before,
-.name h6::after {
+.name h1::before,
+.name h1::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -102,11 +104,11 @@
   animation: shimmer 1s infinite;
 }
 
-.name h6::before {
+.name h1::before {
   animation-delay: 2s;
 }
 
-.name h6::after {
+.name h1::after {
   left: auto;
   right: -10px;
   animation-delay: 2s;
@@ -188,7 +190,7 @@
   padding-top: 10vh;
 }
 
-.biography__title h1::after {
+.biography__title h2::after {
   content: "";
   display: block;
   width: 250px;
@@ -297,17 +299,18 @@
   flex-wrap: wrap;
   flex-direction: row-reverse;
   width: 100%;
-  height: 140px;
+  height: 200px;
   flex-direction: column;
   font-size: 13px
 }
 
 .footer__element {
   display: flex;
-  color: rgb(0, 0, 0);
+  color: rgb(21, 0, 255);
   font-weight: bold;
   text-shadow: 4px 4px 8px rgb(30, 128, 227);
   font-family: Poppins;
+  font-size: 20px;
 }
 
 .align-bottom {
@@ -320,7 +323,7 @@
 
 .footer__link a:link,
 .footer__link a:visited {
-  color: rgb(0, 0, 0);
+  color: rgb(14, 1, 151);
 }
 
 .footer__link a:hover {
@@ -331,8 +334,8 @@
   background-image: url("../img/myimg.jpg");
   display: inline-block;
   background-size: cover;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
 }
 
 .contact-form-container {
@@ -340,7 +343,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 9px
+  font-size: 16px;
 }
 
 .main__container {
@@ -501,7 +504,7 @@
   justify-content: space-between;
 }
 
-/* Impostazione del colore di sfondo rosso per il range */
+
 .form-range::-webkit-slider-runnable-track {
   background-color: rgb(0, 0, 255);
 }
@@ -515,19 +518,58 @@
 }
 
 
-@media screen and (min-width: 600px) {
 
+@media screen and (min-width: 635px) {
   /* Regole CSS per il layout e lo stile dei tablet */
   .headerSetDimension {
-    height: calc(35vh + 10vw);
+    height: calc(38vh + 10vw);
   }
 
 }
 
 @media screen and (min-width: 1024px) {
-
   /* Regole CSS per il layout e lo stile dei desktop */
   .headerSetDimension {
     height: calc(15vh + 15vw);
   }
+}
+
+
+@media screen and (max-width: 576px) {
+  .footer__element {
+    font-size:calc(2vh + 1vw);
+  }
+  
+  .dropdown-menu {
+    text-align: center; /* Centra il testo */
+    width: 100%; /* Rendi il sottomenù largo quanto il contenitore */
+  }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 634px) {
+  
+  .dropdown-menu {
+    text-align: center; /* Centra il testo */
+    width: 100%; /* Rendi il sottomenù largo quanto il contenitore */
+  }
+
+}
+
+
+
+@media (max-width: 634px) {
+  
+  .header-content {
+    padding-top: 110px; /* Mantieni questo valore per le finestre più larghe */
+    margin-top: 60px; /* Aggiungi margine superiore */
+  }
+
+  .nav-item {
+    /* Stile per le voci del menu mobile */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; /* Aggiungi spazio tra le voci */
+  }
+
 }

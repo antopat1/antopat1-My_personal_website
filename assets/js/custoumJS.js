@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   var themeToggle = document.getElementById('theme-toggle');
   var modeLabel = document.getElementById('mode');
-  var body = document.body;
+  //var body = document.body;
+  var themeContainer = document.getElementById('theme-container');
 
   function setThemeText() {
     if (themeToggle.checked) {
@@ -17,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
     setThemeText();
 
     if (themeToggle.checked) {
-      body.classList.add('dark-theme');
+      themeContainer.classList.add('dark-theme');
     } else {
-      body.classList.remove('dark-theme');
+      themeContainer.classList.remove('dark-theme');
     }
   });
 
