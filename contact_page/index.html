@@ -9,7 +9,7 @@
   <meta name="keywords" content="Antonio Paternò Contact_page">
   <meta name="author" content="Antonio Paternò">
 
-  <title>Contact_page</title>
+  <title>Contact page</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -20,10 +20,12 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+  
+
   <link rel="icon" type="image/x-icon" href="../assets/img/myimg.jpg">
 
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 
 </head>
@@ -41,7 +43,7 @@
         </button>
         <div class="nav justify-content-start d-md-block order-md-first " style="transform: translateY(-1px);">
           <ul class="nav ">
-            <li class="brand_icon" style="margin-left: 8px;"></li>
+            <a href="../"><li class="brand_icon" style="margin-left: 8px;"></li></a>
             
           </ul>
         </div>
@@ -88,7 +90,7 @@
           </div>
           <br>
           <br>
-        </section>
+        
 
 
 
@@ -99,8 +101,8 @@
         <div class="container w-70 bg-light">
           <form id="contact_Form" action="#" method="POST" class="row g-3 needs-validation needs-validation "
             novalidate>
-            <div class="col-md-4">
-              <div class="form-floating">
+            <div class="col-md-3">
+             <div class="form-floating">
                 <input name="name" type="text" class="form-control" id="validationCustom01"  required>
                 <label for="validationCustom01">Nome</label>
                 <div class="valid-feedback">
@@ -109,12 +111,12 @@
                 <div class="invalid-feedback">
                   Per favore popola correttamente il campo!
                 </div>
-              </div>
+             </div>
             </div>
             
             
 
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="form-floating">
                 <input name="surname" type="text" class="form-control" id="validationCustom02" required>
                 <label for="validationCustom02">Cognome</label>
@@ -126,7 +128,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <label for="validationCustomUsername" class="form-label">email</label>
               <div class="input-group has-validation">
                 <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -248,7 +250,7 @@
             
             
             
-
+            <br>
 
 
             <div class="col-12">
@@ -257,13 +259,21 @@
                 <label class="form-check-label" for="invalidCheck">
                   Accetta termini e condizioni
                 </label>
+                <br>
+                <br>
+                <br>
                 <div class="invalid-feedback">
                   Devi accettare i termini prima dell'inoltro,
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="button" id="submitBtn">Inoltra richiesta</button>
+            <div class="col-12 center_button">
+              <button class="btn btn-primary " type="button" id="submitBtn">Inoltra richiesta</button>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
             </div>
           </form>
         </div>
@@ -302,19 +312,19 @@
             </div>
           </div>
         </div>
-  
+    
         <br>
-
+      </section> 
     </main>
 
-
+    
 
 
 
 
     <footer class="footer">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="margin-bottom: 5px;margin-top: 120px;padding-bottom: 140px;">
          <div class="col-4 align-bottom">
           
             <div class="footer__element" >
@@ -322,26 +332,26 @@
             </div>
           
          </div>
-         <div class="col-4" style="padding-left: 50px; padding-right: 20px";>
+         <div class="col-4" style="padding-left: 10px; ">
           
             <div class="contact-form-container flex-row">
-              <form id="contactForm" action="#" method="POST">
-                <label
-                  style="font-weight: bold; text-decoration: underline; padding-left: 40px; padding-bottom: 10px;">Contact
-                  me</label><br>
-                <label for="email">Email:</label><br>
+              <form id="contactForm" action="#" method="POST" class="speaker-form">
+                <label class="footer__element" style="justify-content: center;"
+                  >Contattami</label><br>
+                <label for="email" class="form_field">Email:</label><br>
                 <input name="_replyto" type="email" id="email" placeholder="mariorossi@example.com" required /><br>
-                <label for="msg">Message:</label><br>
-                <textarea name="message" type="text" id="msg" placeholder="Hello..." required></textarea><br>
-                <button class="bt-pacifico" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                  disabled>Submit</button>
+                <label for="msg" class="form_field">Messaggio:</label><br>
+                <textarea name="message" type="text" id="msg" placeholder="Hello..." required style="resize: none;"></textarea><br>
+                <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 33%;"
+                  disabled></disabled><i class="fa-solid fa-paper-plane"></i> Invia</button>
+                  
               </form>
             </div>
           
         </div>
          <div class="col-4 align-bottom" > 
           
-            <div class="footer__element" style="padding-left: 20px; padding-top:20px";>
+            <div class="footer__element footer__text" style="padding-left: 50px";>
               <div class="footer__link">
                 <a href="mailto:antopat1@gmail.com">Email</a>
                 <span>||</span>

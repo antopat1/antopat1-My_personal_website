@@ -21,6 +21,8 @@
 
   <link rel="icon" type="image/x-icon" href="assets/img/myimg.jpg">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 
 </head>
 
@@ -38,10 +40,10 @@
           </button>
           <div class="nav justify-content-start d-md-block order-md-first " style="transform: translateY(-1px);">
             <ul class="nav ">
-              <li class="brand_icon" style="margin-left: 8px;"></li>
+              <a href="../antopat1-My_personal_website/"><li class="brand_icon" style="margin-left: 8px;"></li></a>
               <li class="nav-item ">
                 <div class="form-check form-switch nav-link" style="margin-bottom: 0;margin-left: 2rem;">
-                  <input class="form-check-input" type="checkbox" id="theme-toggle">
+                  <input class="form-check-input" type="checkbox" id="theme-toggle" style="margin-left: -40px;">
                   <label class="form-check-label" for="theme-toggle"><span id="mode"></span></label>
 
                 </div>
@@ -100,10 +102,10 @@
                     </h1>
                   </div>
                   <ul>
-                    <li>Telecommunications Engineer</li>
-                    <li>Construction site project manager Network Creation FTTH</li>
-                    <li>Technical Assistant &amp; teacher of coding and robotics in secondary school</li>
-                    <li>Developer and Blockchain enthusiast</li>
+                     <li class="name_list">Telecommunications Engineer</li>
+                     <li class="name_list">Construction site project manager Network Creation FTTH</li>
+                     <li class="name_list">Technical Assistant &amp; teacher of coding and robotics in secondary school</li>
+                     <li class="name_list">Developer and Blockchain enthusiast</li>
                   </ul>
                 </div>
               </div>
@@ -272,7 +274,7 @@
 
     <footer class="footer">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="margin-bottom: 5px;margin-top: 120px;padding-bottom: 140px;">
          <div class="col-4 align-bottom">
           
             <div class="footer__element" >
@@ -280,26 +282,26 @@
             </div>
           
          </div>
-         <div class="col-4" style="padding-left: 50px; padding-right: 20px";>
+         <div class="col-4" style="padding-left: 10px; ">
           
             <div class="contact-form-container flex-row">
-              <form id="contactForm" action="#" method="POST">
-                <label
-                  style="font-weight: bold; text-decoration: underline; padding-left: 40px; padding-bottom: 10px;">Contact
-                  me</label><br>
-                <label for="email">Email:</label><br>
+              <form id="contactForm" action="#" method="POST" class="speaker-form">
+                <label class="footer__element" style="justify-content: center;"
+                  >Contattami</label><br>
+                <label for="email" class="form_field">Email:</label><br>
                 <input name="_replyto" type="email" id="email" placeholder="mariorossi@example.com" required /><br>
-                <label for="msg">Message:</label><br>
-                <textarea name="message" type="text" id="msg" placeholder="Hello..." required></textarea><br>
-                <button class="bt-pacifico" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                  disabled>Submit</button>
+                <label for="msg" class="form_field">Messaggio:</label><br>
+                <textarea name="message" type="text" id="msg" placeholder="Hello..." required style="resize: none;"></textarea><br>
+                <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 33%;"
+                  disabled></disabled><i class="fa-solid fa-paper-plane"></i> Invia</button>
+                  
               </form>
             </div>
           
         </div>
          <div class="col-4 align-bottom" > 
           
-            <div class="footer__element" style="padding-left: 20px; padding-top:20px";>
+            <div class="footer__element footer__text" style="padding-left: 50px";>
               <div class="footer__link">
                 <a href="mailto:antopat1@gmail.com">Email</a>
                 <span>||</span>
