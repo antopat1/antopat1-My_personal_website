@@ -82,6 +82,7 @@
           <br>
           <div class="biography__title">
             <h1>Percorso di Formazione scolastica/Stage</h1>
+            <br>
           </div>
         </section>
 
@@ -217,83 +218,36 @@
 
 
 
-    <footer class="footer">
+    <div class="subfooter">
       <div class="container-fluid">
-        <div class="row" style="margin-bottom: 5px;margin-top: 120px;padding-bottom: 140px;">
-         <div class="col-4 align-bottom">
-          
-            <div class="footer__element" >
-              <div class="footer__text">&copy; 2023 - Antonio Paternò</div>
+        <div class="row" >
+          <div class="col-4 align-bottom">
+
+            <div class="footer__element">
+              <div class="footer__text nowrap">&copy; 2023 - Antonio Paternò</div>
             </div>
-          
-         </div>
-         <div class="col-4" style="padding-left: 10px; ">
-          
-            <div class="contact-form-container flex-row">
-              <form id="contactForm" action="#" method="POST" class="speaker-form">
-                <label class="footer__element" style="justify-content: center;"
-                  >Contattami</label><br>
-                <label for="email" class="form_field">Email:</label><br>
-                <input name="_replyto" type="email" id="email" placeholder="mariorossi@example.com" required /><br>
-                <label for="msg" class="form_field">Messaggio:</label><br>
-                <textarea name="message" type="text" id="msg" placeholder="Hello..." required style="resize: none;"></textarea><br>
-                <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 33%;"
-                  disabled></disabled><i class="fa-solid fa-paper-plane"></i> Invia</button>
-                  
-              </form>
-            </div>
-          
-        </div>
-         <div class="col-4 align-bottom" > 
-          
-            <div class="footer__element footer__text" style="padding-left: 50px";>
-              <div class="footer__link">
+
+          </div>
+          <div class="col-4">
+
+
+
+          </div>
+
+          <div class="col-4 align-bottom" >
+
+            <div class="footer__element footer__text nowrap" >
+              <div class="footer__link ">
                 <a href="mailto:antopat1@gmail.com">Email</a>
                 <span>||</span>
                 <a href="#home">Torna su</a>
               </div>
             </div>
-          
-         </div>
-        </div>
-      </div>
-      
-          <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-    data-bs-backdrop="static">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="modalTitle"></h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p id="userMessage"></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="inoltraMessaggioFooter()">Inoltra il messaggio</button>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal successo -->
-  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="successModalLabel">Messaggio inoltrato con successo</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    </footer>
 
 
     <script src="../../assets/js/bootstrap.js"></script>

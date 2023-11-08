@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // -- QUI INIZIA IL CODICE CHE IMPLEMENTA LA FUNZIONALITA' MODALE -- //
 
 var submitButton = document.querySelector('#contactForm button[type="submit"]');
+var fullNameInput = document.getElementById('full-name');
 var emailInput = document.getElementById('email');
 var messageInput = document.getElementById('msg');
 
@@ -38,7 +39,7 @@ emailInput.addEventListener('input', validateForm);
 messageInput.addEventListener('input', validateForm);
 
 function validateForm() {
-  var isValid = emailInput.checkValidity() && messageInput.checkValidity();
+  var isValid = fullNameInput.checkValidity() && emailInput.checkValidity() && messageInput.checkValidity();
   submitButton.disabled = !isValid;
 }
 

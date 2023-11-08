@@ -108,11 +108,11 @@
 
 
 
-
-
-        <section class="works">
-          <div class="row">
-            <div class="col-md-3">
+     
+       
+        <section class="works " >
+          <div class="row" style="margin-top: 60px;margin-left: 30px; ">
+            <div class="col-md-6">
               <div class="work-container">
                 <a href="https://github.com/antopat1/coinmarketcap_bot" target="_blank">
                   <div class="description">
@@ -163,9 +163,12 @@
                   </div>
                 </div>
               </div>
+              <br>
+              <br>
             </div>
-
-            <div class="col-md-3">
+            
+            <div class="col-md-6" >
+              
               <div class="work-container">
                 <a href="https://github.com/antopat1/ProgettoDJangoDiAntoninoPaterno2" target="_blank">
                   <div class="description">
@@ -205,8 +208,17 @@
               </div>
             </div>
 
-            <div class="col-md-3">
+          </div>
+
+          <br>
+          <br>
+
+          <div class="row" style="margin-left: 30px;">
+            
+            <div class="col-md-6" style="margin-top: 50px;">
+              
               <div class="work-container">
+                
                 <a href="https://github.com/antopat1/ProgettoMongoDBdiAntoninoPaterno" target="_blank">
                   <div class="description">
                     <p>3°</p>
@@ -265,9 +277,13 @@
                   </div>
                 </div>
               </div>
+              <br>
+              <br>
             </div>
+            
+           
 
-            <div class="col-md-3">
+            <div class="col-md-6" style="margin-top: 50px;">
               <div class="work-container">
                 <a href="https://github.com/antopat1/ProgettoEthereumWeb3diAntoninoPaterno" target="_blank">
                   <div class="description">
@@ -310,24 +326,19 @@
                     </div>
                   </div>
                 </div>
+                
               </div>
             </div>
+            
           </div>
-
-
-        </section>
-
-        <div class="d-sm-flex justify-content-center align-items-center">
+          
           <br>
-          <p><i>*L'immagine rimanda al Repository github , l'etichetta ad una sintetica descrizione dello specifico
-              progetto</i></p>
           <br>
-        </div>
+          
 
-
-        <section class="works">
-          <div class="row">
-            <div class="col-md-12">
+          <div class="row" style="margin-top: 20px;margin-left: 30px;">
+            
+            <div class="col-md-6" >
               <div class="work-container">
                 <a href="https://github.com/antopat1/antopat1-My_personal_website" target="_blank">
                   <div class="description">
@@ -358,14 +369,60 @@
                   </div>
                 </div>
               </div>
+              <br>
             </div>
 
+            <div class="col-md-6" >
+              <div class="work-container">
+                <a href="https://github.com/antopat1/acquireDataFromPDFandSaveToCSV" target="_blank">
+                  <div class="description">
+                    <p>
+                      4°
+                    </p>
+                  </div>
+                  <img src="../../assets/img/pdf_extraction.jpg" alt="acquisition automation" />
+                </a>
+                <!-- Pulsante modale per l'immagine "Smartcontract Salvadanaio di Token ERC20 su Ethereum" -->
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal6">
+                  Script di acquisizione dati da PDF a CSV
+                </button>
+              </div>
+              <!-- Modal per l'immagine "Smartcontract Salvadanaio di Token ERC20 su Ethereum" -->
+              <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal6Label">Script Python di acquisizione dati PDF edittabili</h5>
+                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Lo script acquisisce tutti i valori inseriti nei campi edittabili di tutti i PDF salvati
+                      in una cartella su Disco.<br>
+                      Elaborando gli XML di ciascun documento, si salvano tutti i dati inseriti dagli utenti nei 
+                      diversi PDF (a condizione di condividerne la struttura dati) in un FILE CSV per 
+                      successive elaborazioni su foglio di calcolo.  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
           </div>
 
-
         </section>
+       
 
+        <div class="d-sm-flex justify-content-center align-items-center">
+          <br>
+          <p><i>*L'immagine rimanda al Repository github , l'etichetta ad una sintetica descrizione in popup dello specifico
+              progetto</i></p>
+          <br>
+        </div>
 
+        <br>
 
     </main>
 
@@ -374,37 +431,26 @@
 
 
 
-    <footer class="footer">
+    <div class="subfooter">
       <div class="container-fluid">
-        <div class="row" style="margin-bottom: 5px;margin-top: 120px;padding-bottom: 140px;">
+        <div class="row" >
           <div class="col-4 align-bottom">
 
             <div class="footer__element">
-              <div class="footer__text">&copy; 2023 - Antonio Paternò</div>
+              <div class="footer__text nowrap">&copy; 2023 - Antonio Paternò</div>
             </div>
 
           </div>
-          <div class="col-4" style="padding-left: 10px; ">
+          <div class="col-4">
 
-            <div class="contact-form-container flex-row">
-              <form id="contactForm" action="#" method="POST" class="speaker-form">
-                <label class="footer__element" style="justify-content: center;">Contattami</label><br>
-                <label for="email" class="form_field">Email:</label><br>
-                <input name="_replyto" type="email" id="email" placeholder="mariorossi@example.com" required /><br>
-                <label for="msg" class="form_field">Messaggio:</label><br>
-                <textarea name="message" type="text" id="msg" placeholder="Hello..." required
-                  style="resize: none;"></textarea><br>
-                <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                  style="margin-left: 33%;" disabled></disabled><i class="fa-solid fa-paper-plane"></i> Invia</button>
 
-              </form>
-            </div>
 
           </div>
-          <div class="col-4 align-bottom">
 
-            <div class="footer__element footer__text" style="padding-left: 50px" ;>
-              <div class="footer__link">
+          <div class="col-4 align-bottom" >
+
+            <div class="footer__element footer__text nowrap" >
+              <div class="footer__link ">
                 <a href="mailto:antopat1@gmail.com">Email</a>
                 <span>||</span>
                 <a href="#home">Torna su</a>
@@ -414,44 +460,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-        data-bs-backdrop="static">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title fs-5" id="modalTitle"></h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p id="userMessage"></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onclick="inoltraMessaggioFooter()">Inoltra il
-                messaggio</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal successo -->
-      <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title fs-5" id="successModalLabel">Messaggio inoltrato con successo</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </footer>
+    </div>
 
 
     <script src="../../assets/js/bootstrap.js"></script>

@@ -9,12 +9,12 @@
   <meta name="keywords"
     content="Antonio Paternò WebSite, Ingegnere delle Telecomunicazioni, portfolio progetti, sviluppo web3">
   <meta name="author" content="Antonio Paternò">
-  
+
   <meta name="title" content="Antonio Paternò WebSite" />
 
   <meta property="og:image"
-    content="https://github.com/antopat1/antopat1-My_personal_website/blob/main/assets/img/programmazione_blockchain.jpg">
-  
+    content="https:/antopat1.github.io/antopat1-My_personal_website/assets/img/programmazione_blockchain.jpg">
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://antopat1.github.io/antopat1-My_personal_website/" />
@@ -50,6 +50,8 @@
 
 
 <body>
+  
+
   <div class="page">
     <div id="theme-container">
       <header class="customHeader headerSetDimension "><a name="home"></a>
@@ -60,19 +62,30 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="nav justify-content-start d-md-block order-md-first " style="transform: translateY(-1px);">
-            <ul class="nav ">
-              <a href="../antopat1-My_personal_website/">
-                <li class="brand_icon" style="margin-left: 8px;"></li>
-              </a>
-              <li class="nav-item ">
-                <div class="form-check form-switch nav-link" style="margin-bottom: 0;margin-left: 2rem;">
-                  <input class="form-check-input" type="checkbox" id="theme-toggle" style="margin-left: -40px;">
-                  <label class="form-check-label" for="theme-toggle"><span id="mode"></span></label>
 
+            
+            <ul class="nav" >
+              
+
+              <li class="nav-item" >
+                
+                <div class="form-check form-switch nav-link"  >
+                  
+                 <div style="display: flex;">
+                  <a href="../antopat1-My_personal_website/" class="brand_icon" style="margin-left: 10px;" ></a>
+                  <input class="form-check-input" style="margin-left: 20px;margin-top: 20px;" type="checkbox" id="theme-toggle" >
+                  <label class="form-check-label" style="margin-left: 10px;margin-top: 20px;" for="theme-toggle" ><span id="mode"></span></label>
+                  
+                  
+                 </div> 
                 </div>
               </li>
+              
+              
+
             </ul>
           </div>
+
           <div class="collapse navbar-collapse justify-content-end ml-auto " id="navbarMenu">
             <ul class="nav nav-pills justify-content-end bg-info">
               <li class="nav-item">
@@ -100,6 +113,7 @@
               </li>
             </ul>
           </div>
+
         </nav>
 
 
@@ -227,7 +241,7 @@
                               style="text-align: left; color: rgb(0, 0, 255);">JAVASCRIPT
                               50%</span></div>
                         </div>
-
+                        <br>
 
                       </div>
 
@@ -239,8 +253,8 @@
                     <img class="biography__img" src="assets/img/myimg.jpg" alt="My Criptopunk Avatar">
                   </div>
                   <div class="col-md-4">
-                    <div class="skills__soft">
-                      <h3>SOFT SKILLS</h3>
+                    <div class="skills__soft" ; style="padding-bottom: 50px;">
+                      <h3><br>SOFT SKILLS</h3>
                       <ul class="list-unstyled">
 
                         <li><i class="fas fa-users skills__icon"></i> Lavorare in team</li>
@@ -312,51 +326,39 @@
     </div>
 
 
-
-
-
     <footer class="footer">
-      <div class="container-fluid">
-        <div class="row" style="margin-bottom: 5px;margin-top: 120px;padding-bottom: 140px;">
-          <div class="col-4 align-bottom">
 
-            <div class="footer__element">
-              <div class="footer__text">&copy; 2023 - Antonio Paternò</div>
-            </div>
+      <section class="contact__form__section"><a name="contact"></a>
 
-          </div>
-          <div class="col-4" style="padding-left: 10px; ">
-
-            <div class="contact-form-container flex-row">
-              <form id="contactForm" action="#" method="POST" class="speaker-form">
-                <label class="footer__element" style="justify-content: center;">Contattami</label><br>
-                <label for="email" class="form_field">Email:</label><br>
-                <input name="_replyto" type="email" id="email" placeholder="mariorossi@example.com" required /><br>
-                <label for="msg" class="form_field">Messaggio:</label><br>
-                <textarea name="message" type="text" id="msg" placeholder="Hello..." required
-                  style="resize: none;"></textarea><br>
-                <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                  style="margin-left: 33%;" disabled></disabled><i class="fa-solid fa-paper-plane"></i> Invia</button>
-
-              </form>
-            </div>
-
-          </div>
-          <div class="col-4 align-bottom">
-
-            <div class="footer__element footer__text" style="padding-left: 50px" ;>
-              <div class="footer__link">
-                <a href="mailto:antopat1@gmail.com">Email</a>
-                <span>||</span>
-                <a href="#home">Torna su</a>
-              </div>
-            </div>
-
-          </div>
+        <div class="contact__form__title biography__title">
+          <h2>Contattami</h2>
         </div>
-      </div>
+        <form id="contactForm" action="#" method="POST" class="contact__form">
+          <div class="form__item">
+            <label for="full-name" class="form_field">Nome Cognome</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Mario Rossi" required>
+          </div>
 
-      <!-- Modal -->
+          <div class="form__item">
+            <label for="email" class="form_field">Email</label>
+            <input name="_replyto" type="email" id="email" placeholder="mariorossi@example.com" required /><br>
+          </div>
+
+          <div class="form__item">
+            <label for="msg" class="form_field">Lascia un messaggio</label>
+            <textarea name="message" type="text" id="msg" placeholder="Hello..." required
+              style="resize: none;"></textarea><br>
+          </div>
+          <div class="center_paper_plane">
+            <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              disabled></disabled>
+              <i class="fa-solid fa-paper-plane custom_paper_plane"> &nbsp; Invia</i>
+            </button>
+          </div>
+        </form>
+
+      </section>
+
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
         data-bs-backdrop="static">
         <div class="modal-dialog">
@@ -377,7 +379,7 @@
         </div>
       </div>
 
-      <!-- Modal successo -->
+
       <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -392,7 +394,41 @@
         </div>
       </div>
 
+
+
     </footer>
+
+    <div class="subfooter">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 align-bottom">
+
+            <div class="footer__element">
+              <div class="footer__text nowrap">&copy; 2023 - Antonio Paternò</div>
+            </div>
+
+          </div>
+          <div class="col-4">
+
+
+
+          </div>
+
+          <div class="col-4 align-bottom">
+
+            <div class="footer__element footer__text nowrap">
+              <div class="footer__link ">
+                <a href="mailto:antopat1@gmail.com">Email</a>
+                <span>||</span>
+                <a href="#home">Torna su</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
 
